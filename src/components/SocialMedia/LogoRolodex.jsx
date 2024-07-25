@@ -1,22 +1,22 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const LogoRolodex = ({ items }) => {
-    const DELAY_IN_MS = 2500;
-const TRANSITION_DURATION_IN_SECS = 1.5;
+  const DELAY_IN_MS = 2500;
+  const TRANSITION_DURATION_IN_SECS = 1.5;
 
-const intervalRef = useRef(null);
-const [index, setIndex] = useState(0);
+  const intervalRef = useRef(null);
+  const [index, setIndex] = useState(0);
 
-useEffect(() => {
-  intervalRef.current = setInterval(() => {
-    setIndex((pv) => pv + 1);
-  }, DELAY_IN_MS);
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setIndex((pv) => pv + 1);
+    }, DELAY_IN_MS);
 
-  return () => {
-    clearInterval(intervalRef.current || undefined);
-  };
-}, []);
+    return () => {
+      clearInterval(intervalRef.current || undefined);
+    };
+  }, []);
   return (
     <div
       style={{
@@ -75,7 +75,7 @@ useEffect(() => {
         className="absolute left-0 right-0 top-1/2 z-[999999999] -translate-y-1/2 border-t-2 border-neutral-800"
       />
     </div>
-  )
-}
+  );
+};
 
-export default LogoRolodex
+export default LogoRolodex;

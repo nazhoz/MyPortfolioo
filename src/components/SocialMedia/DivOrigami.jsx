@@ -1,32 +1,41 @@
-import React from 'react'
-import { SiAmazon, SiGithub, SiGoogle, SiMeta, SiTwitch } from 'react-icons/si'
-import LogoRolodex from './LogoRolodex'
-import LogoItem from './LogoItem'
+import React from "react";
+import { SiGithub, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
+import { FcGoogle } from "react-icons/fc";
+import LogoRolodex from "./LogoRolodex";
+import LogoItem from "./LogoItem";
 
 const DivOrigami = () => {
   return (
-    <section className="flex h-72 flex-col items-center justify-center gap-12 bg-neutral-950 px-4 py-24 md:flex-row">
-      <LogoRolodex
-        items={[
-          <LogoItem key={1} className="bg-orange-300 text-neutral-900">
-            <SiAmazon />
-          </LogoItem>,
-          <LogoItem key={2} className="bg-green-300 text-neutral-900">
-            <SiGoogle />
-          </LogoItem>,
-          <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-            <SiMeta />
-          </LogoItem>,
-          <LogoItem key={4} className="bg-white text-black">
-            <SiGithub />
-          </LogoItem>,
-          <LogoItem key={5} className="bg-purple-300 text-neutral-900">
-            <SiTwitch />
-          </LogoItem>,
-        ]}
-      />
-    </section>
-  )
-}
+    <>
+      <section className="flex h-72 flex-col items-center justify-around gap-12 bg-neutral-950 px-4 py-24 md:flex-row">
+        <div>
+          <span className="text-white">logo</span>
+        </div>
+        <LogoRolodex
+          items={[
+            <LogoItem key={1} className="bg-[#25D366] text-white">
+              <SiWhatsapp />
+            </LogoItem>,
+            <LogoItem key={2} className="bg-white text-neutral-900">
+              <FcGoogle />
+            </LogoItem>,
+            <LogoItem
+              key={3}
+              className="bg-gradient-to-t from-custom1 via-custom2 via-custom3 via-custom4 to-custom5 text-white"
+            >
+              <SiInstagram />
+            </LogoItem>,
+            <LogoItem key={4} className="bg-white text-black">
+              <SiGithub />
+            </LogoItem>,
+            <LogoItem key={5} className="bg-[#0077B5] text-white">
+              <SiLinkedin />
+            </LogoItem>,
+          ]}
+        />
+      </section>
+    </>
+  );
+};
 
-export default DivOrigami
+export default DivOrigami;
