@@ -5,7 +5,7 @@ import { TbBrandReactNative } from "react-icons/tb";
 import { RiCss3Fill, RiHtml5Line, RiNodejsLine, RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { PiGithubLogoBold } from "react-icons/pi";
-import { SiMongodb, SiMysql } from "react-icons/si";
+import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 
 const Screen = () => {
   return (
@@ -24,6 +24,7 @@ const Screen = () => {
       <SiMongodb size={35} className="text-black bg-white p-1 rounded-md transition duration-500 hover:text-[#006649]"  />
       <SiMysql size={35} className="text-black bg-white p-1 rounded-md transition duration-500 hover:text-[#04546F]"  />
       <RiTailwindCssFill size={35} className="text-black bg-white p-1 rounded-md transition duration-500 hover:text-[#05B0CE]"  />
+      <SiExpress size={35} className="text-black bg-white p-1 rounded-md transition duration-500 hover:text-[#7E7E7E]"  />
       </div>
       <div className="bg-gray-400/20 backdrop-blur-lg rounded-md absolute mt-[300px] w-[90%] ml-3 h-[40px] flex justify-around items-center">
       <IoLogoJavascript size={25} className="text-black bg-white p-1 rounded-md transition duration-500 hover:text-[#F0DC55] " />

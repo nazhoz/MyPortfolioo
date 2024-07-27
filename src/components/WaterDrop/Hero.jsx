@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import EncryptButton from "./EncryptButton";
 
 const Hero = () => {
-  const texts = ["Fullstack Developer", "MERN Stack Developer"];
+  const texts = useMemo(() => ["Fullstack Developer", "MERN Stack Developer"], []);
   const [index, setIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -10,9 +10,7 @@ const Hero = () => {
   useEffect(() => {
     const typingSpeed = isDeleting ? 100 : 150;
     const timeout = setTimeout(() => {
-      setCharIndex((prev) =>
-        isDeleting ? prev - 1 : prev + 1
-      );
+      setCharIndex((prev) => (isDeleting ? prev - 1 : prev + 1));
     }, typingSpeed);
 
     if (!isDeleting && charIndex === texts[index].length) {
