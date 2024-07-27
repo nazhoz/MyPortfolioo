@@ -21,7 +21,7 @@ const DivOrigami = () => {
             </LogoItem>,
             <LogoItem
               key={3}
-              className="bg-gradient-to-t from-custom1 via-custom2 via-custom3 via-custom4 to-custom5 text-white"
+              className="bg-gradient-to-t from-custom2 via-custom3 to-custom5 text-white"
             >
               <SiInstagram />
             </LogoItem>,

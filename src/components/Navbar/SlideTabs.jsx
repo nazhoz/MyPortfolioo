@@ -16,7 +16,7 @@ const SlideTabs = () => {
           opacity: 0,
         }));
       }}
-      className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-white p-1"
+      className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-white p-1 "
     >
       <Tab setPosition={setPosition}>Home</Tab>
       <Tab setPosition={setPosition}>Pricing</Tab>

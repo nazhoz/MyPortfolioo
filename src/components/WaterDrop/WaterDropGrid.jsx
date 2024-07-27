@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import DotGrid from "./DotGrid";
 import Hero from "./Hero";
 import SlideTabs from "../Navbar/SlideTabs";
@@ -7,14 +7,35 @@ import ExampleContent from "../home/ExampleContent";
 import FloatingPhone from "../FloatingPhone/FloatingPhone";
 
 const WaterDropGrid = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="relative  bg-slate-900 px-8 py-12">
-      <div className="mb-7">
+    <div className="relative bg-slate-900 px-8 py-12">
+      <div
+        className={`transition-all duration-300 ${
+          isScrolled ? "fixed top-3" : "fixed top-10"
+        }  w-full z-30`}
+      >
         <SlideTabs />
       </div>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mt-[7%]">
         <Hero />
-        <div className=" ml-[50%]">
+        <div className="ml-[50%]">
           <div className="relative">
             <DotGrid />
           </div>
