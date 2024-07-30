@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import anime from "animejs";
 
 const DotGrid = () => {
-    const GRID_WIDTH = 25;
-const GRID_HEIGHT = 20;
+  const GRID_WIDTH = 25;
+  const GRID_HEIGHT = 20;
 
-const handleDotClick = (e) => {
+  const handleDotClick = (e) => {
     anime({
       targets: ".dot-point",
       scale: [
@@ -49,13 +49,13 @@ const handleDotClick = (e) => {
   }
   return (
     <div
-    onClick={handleDotClick}
-    style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
-    className="grid w-fit"
-  >
-    {dots}
-  </div>
-  )
-}
+      onClick={handleDotClick}
+      style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
+      className="grid w-fit"
+    >
+      {dots}
+    </div>
+  );
+};
 
-export default DotGrid
+export default DotGrid;

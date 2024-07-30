@@ -1,12 +1,12 @@
-import React from 'react'
-import SlideTabs from './SlideTabs'
+import React from "react";
+import SlideTabs from "./SlideTabs";
 
 const SlideTabsExample = () => {
   return (
     <div className="">
-    <SlideTabs />
-  </div>
-  )
-}
+      <SlideTabs />
+    </div>
+  );
+};
 
-export default SlideTabsExample
+export default SlideTabsExample;

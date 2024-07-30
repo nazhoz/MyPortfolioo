@@ -21,9 +21,8 @@ const SlideTabs = () => {
       <Tab setPosition={setPosition}>Home</Tab>
       <Tab setPosition={setPosition}>Skills</Tab>
       <Tab setPosition={setPosition}>My Works</Tab>
-      <Tab setPosition={setPosition}>Contact</Tab>
       <Tab setPosition={setPosition}>Companies</Tab>
-
+      <Tab setPosition={setPosition}>Contact</Tab>
       <Cursor position={position} />
     </ul>
   );

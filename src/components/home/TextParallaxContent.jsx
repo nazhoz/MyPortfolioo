@@ -1,11 +1,9 @@
-import React from 'react'
-import StickyImage from './StickyImage';
-import OverLayCopy from './OverLayCopy';
-
-
+import React from "react";
+import StickyImage from "./StickyImage";
+import OverLayCopy from "./OverLayCopy";
 
 const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
-    const IMG_PADDING = 12;
+  const IMG_PADDING = 12;
   return (
     <div
       style={{
@@ -14,7 +12,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
       }}
     >
       <div className="relative h-[150vh]">
-        <StickyImage imgUrl={imgUrl} imgPadding={IMG_PADDING}/>
+        <StickyImage imgUrl={imgUrl} imgPadding={IMG_PADDING} />
         <OverLayCopy heading={heading} subheading={subheading} />
       </div>
       {children}
@@ -22,4 +20,4 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
   );
 };
 
-export default TextParallaxContent
+export default TextParallaxContent;

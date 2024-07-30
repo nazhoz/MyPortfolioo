@@ -29,11 +29,11 @@ const WaterDropGrid = () => {
       <div
         className={`transition-all duration-300 ${
           isScrolled ? "fixed top-3" : "fixed top-10"
-        }  w-full z-30`}
+        } sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[100%]  z-30`}
       >
         <SlideTabs />
       </div>
-      <div className="flex justify-between items-center mt-[7%]">
+      <div className="flex justify-between items-center mt-[7%] ">
         <Hero />
         <div className="ml-[50%]">
           <div className="relative">

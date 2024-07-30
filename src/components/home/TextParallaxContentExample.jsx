@@ -1,6 +1,6 @@
-import React from 'react'
-import TextParallaxContent from './TextParallaxContent'
-import ExampleContent from './ExampleContent'
+import React from "react";
+import TextParallaxContent from "./TextParallaxContent";
+import ExampleContent from "./ExampleContent";
 
 const TextParallaxContentExample = () => {
   return (
@@ -27,7 +27,7 @@ const TextParallaxContentExample = () => {
         <ExampleContent />
       </TextParallaxContent>
     </div>
-  )
-}
+  );
+};
 
-export default TextParallaxContentExample
+export default TextParallaxContentExample;
