@@ -25,26 +25,26 @@ const WaterDropGrid = () => {
   }, []);
 
   return (
-    <div className="relative bg-slate-900 px-8 py-12">
+    <div className="relative bg-slate-900 px-4 py-6 sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-12 lg:py-12">
       <div
         className={`transition-all duration-300 ${
           isScrolled ? "fixed top-3" : "fixed top-10"
-        } sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-[100%] 2xl:w-[100%] z-30`}
+        } w-full z-30`}
       >
         <SlideTabs />
       </div>
-      <div className="flex justify-between items-center mt-[7%]">
+      <div className="flex flex-col lg:flex-row justify-between items-center mt-16 ">
         <Hero />
-        <div className="ml-[50%]">
-          <div className="relative">
+        <div className="mt-6 lg:mt-0 lg:ml-[50%] flex justify-center lg:justify-start">
+          <div className="mt-0 sm:mt-12">
             <DotGrid />
           </div>
-          <div className="absolute -mt-[32%] ml-[16%]">
+          <div className="absolute mt-[5%] ml-[16%] hidden sm:block md:block">
             <FloatingPhone />
           </div>
         </div>
       </div>
-      <div className="mt-12">
+      <div className="mt-12 space-y-12 ">
         <TextParallaxContent
           imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           subheading="Collaborate"

@@ -47,13 +47,16 @@ const DotGrid = () => {
       index++;
     }
   }
+
   return (
-    <div
-      onClick={handleDotClick}
-      style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
-      className="grid w-fit"
-    >
-      {dots}
+    <div className="container mx-auto p-1 " >
+      <div
+        onClick={handleDotClick}
+        style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, minmax(0, 1fr))` }}
+        className="grid "
+      >
+        {dots}
+      </div>
     </div>
   );
 };

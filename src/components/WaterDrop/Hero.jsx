@@ -27,19 +27,19 @@ const Hero = () => {
   }, [charIndex, isDeleting, index, texts]);
 
   return (
-    <div className="text-white absolute w-[50%] ml-[5%] flex flex-col gap-4 z-10">
+    <div className="text-white absolute w-[90%] md:w-[70%] lg:w-[50%] ml-[5%] h-[70vh] flex flex-col gap-4 z-10 ">
       <div className="flex flex-col">
-        <span className="text-[120px] font-bold">
+        <span className="text-[10vw] md:text-[8vw] lg:text-[6vw] font-bold leading-tight">
           Hi, I'm Naz<span className="text-[#6366F1]">.</span>
         </span>
-        <span className="text-[40px] font-bold">
+        <span className="text-[5vw] md:text-[3vw] lg:text-[2.5vw] font-bold leading-tight">
           I'm a{" "}
           <span className="text-[#6366F1]">
             {texts[index].slice(0, charIndex)}
           </span>
         </span>
       </div>
-      <span className="text-[20px]">
+      <span className="text-[4vw] md:text-[2vw] lg:text-[1.5vw] leading-tight">
         I've spent the last 1.5 years building and scaling software for some
         pretty cool companies. I also teach people to paint online (in case
         you've got an empty canvas layin' around 🎨). Let's connect!

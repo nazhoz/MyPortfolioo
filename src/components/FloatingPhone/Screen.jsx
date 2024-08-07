@@ -8,14 +8,14 @@ import {
   RiNodejsLine,
   RiTailwindCssFill,
 } from "react-icons/ri";
-import { IoLogoFirebase } from "react-icons/io5";
+import { IoLogoFirebase, IoLogoSass } from "react-icons/io5";
 import { PiGithubLogoBold } from "react-icons/pi";
 import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 
 const Screen = () => {
   return (
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-black">
-      <div className="grid grid-cols-3 h-[170px] w-[180px] -mt-[70%] ml-1">
+      <div className="grid grid-cols-3 h-[210px] w-[180px] -mt-[50%] ml-1">
         <RiHtml5Line
           size={35}
           className="text-black bg-white p-1 rounded-md transition duration-500 hover:text-[#FC4F13]"
@@ -28,6 +28,10 @@ const Screen = () => {
         <IoLogoJavascript
           size={35}
           className="text-black bg-white p-1 rounded-md transition duration-500 hover:text-[#F0DC55]"
+        />
+        <IoLogoSass
+          size={35}
+          className="text-black bg-white p-1 rounded-md transition duration-500 hover:text-[#C76395]"
         />
         <GrReactjs
           size={35}

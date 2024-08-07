@@ -25,7 +25,7 @@ const FloatingPhone = () => {
           duration: 2,
           ease: "easeInOut",
         }}
-        className=" h-96 w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-neutral-900  border-l-neutral-900  border-t-neutral-900  bg-neutral-900 p-1 pl-[3px] pt-[3px]"
+        className="h-96 w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-neutral-900 border-l-neutral-900  border-t-neutral-900  bg-neutral-900 p-1 pl-[3px] pt-[3px]"
       >
         <HeaderBar />
         <Screen />
